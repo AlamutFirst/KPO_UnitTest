@@ -1,0 +1,7 @@
+C:\Users\Boris\source\repos\KPO\KPO\bin\Debug\KPO.exe.config
+C:\Users\Boris\source\repos\KPO\KPO\bin\Debug\KPO.exe
+C:\Users\Boris\source\repos\KPO\KPO\bin\Debug\KPO.pdb
+C:\Users\Boris\source\repos\KPO\KPO\obj\Debug\KPO.csprojAssemblyReference.cache
+C:\Users\Boris\source\repos\KPO\KPO\obj\Debug\KPO.csproj.CoreCompileInputs.cache
+C:\Users\Boris\source\repos\KPO\KPO\obj\Debug\KPO.exe
+C:\Users\Boris\source\repos\KPO\KPO\obj\Debug\KPO.pdb
