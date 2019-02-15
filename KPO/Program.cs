@@ -13,6 +13,10 @@ namespace KPO
             Math mt = new Math();
             var ss =mt.SumOfN(10);
             Console.WriteLine(ss);
+            var users = new Users(new TableData());
+
+            var result = users.GetAll();
+
         }
     }
 }
