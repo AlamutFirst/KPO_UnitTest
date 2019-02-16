@@ -36,3 +36,11 @@ GUI/obj/Debug/GUI.csproj.GenerateResource.cache
 GUI/obj/Debug/GUI.csprojAssemblyReference.cache
 GUI/obj/Debug/GUI.exe
 GUI/obj/Debug/GUI.pdb
+GUI/obj/Debug/GUI.csproj.FileListAbsolute.txt
+GUI/obj/Debug/GUI.csprojResolveAssemblyReference.cache
+GUI/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+GUI/obj/Debug/GUI.csproj.CoreCompileInputs.cache
+KPO/Database1_log.ldf
+KPO/Database1.mdf
+UnitTestKPO/obj/Debug/UnitTestKPO.csproj.CoreCompileInputs.cache
+UnitTestKPO/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
