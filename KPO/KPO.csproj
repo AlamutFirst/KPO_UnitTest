@@ -67,7 +67,7 @@
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="FakeTablecs.cs" />
-    <Compile Include="ITable.cs" />
+    <Compile Include="Interfaces\ITable.cs" />
     <Compile Include="Math.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,7 +76,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Table.cs" />
+    <Compile Include="Models\Table.cs" />
     <Compile Include="TableData.cs" />
     <Compile Include="Users.cs" />
   </ItemGroup>

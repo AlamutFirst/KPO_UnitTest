@@ -13,3 +13,16 @@ packages/Dapper.1.50.7/lib/netstandard1.3/Dapper.xml
 .vs/KPO/v15/Server/sqlite3/storage.ide-wal
 packages/Dapper.1.50.7/lib/netstandard2.0/Dapper.dll
 packages/Dapper.1.50.7/lib/netstandard2.0/Dapper.xml
+UnitTestKPO/bin/Debug/Dapper.dll
+UnitTestKPO/bin/Debug/Dapper.xml
+UnitTestKPO/bin/Debug/Database1.mdf
+UnitTestKPO/bin/Debug/Database1_log.ldf
+UnitTestKPO/bin/Debug/KPO.exe
+UnitTestKPO/bin/Debug/KPO.exe.config
+UnitTestKPO/bin/Debug/KPO.pdb
+UnitTestKPO/bin/Debug/UnitTestKPO.pdb
+UnitTestKPO/bin/Debug/UnitTestKPO.dll
+UnitTestKPO/obj/Debug/UnitTestKPO.pdb
+UnitTestKPO/obj/Debug/UnitTestKPO.csproj.FileListAbsolute.txt
+UnitTestKPO/obj/Debug/UnitTestKPO.csprojAssemblyReference.cache
+UnitTestKPO/obj/Debug/UnitTestKPO.dll

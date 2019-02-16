@@ -17,5 +17,17 @@ namespace KPO
         {
             return _userRepository.GetAll();
         }
+        public Table GetFirstItem()
+        {
+            return _userRepository.GetFirstItem();
+        }
+        public Table GetUserByName(string name)
+        {
+            return _userRepository.GetUserByName(name);
+        }
+        public Table GetUserByAddres(string address)
+        {
+            return _userRepository.GetUserByAddres(address);
+        }
     }
 }

@@ -6,15 +6,27 @@ using System.Threading.Tasks;
 
 namespace KPO
 {
-    class FakeTablecs : ITable
+    public class FakeTablecs : ITable
     {
+        public List<Table> lista;
+
         public IEnumerable<Table> GetAll()
         {
-            return new List<Table> { new Table { ime = "Bob", priimek = "Smith", naslov="Doma", Id=1 },
-                new Table { ime = "loje", priimek = "Pišuka", naslov="Služba", Id=2 },
-                new Table { ime = "Boris", priimek = "čižman", naslov="Internet", Id=3 },
-                new Table { ime = "Peter", priimek = "Prevc", naslov="LJ", Id=4 }
-            };
+            return lista;
+        }
+        public Table GetFirstItem()
+        {
+            var item = lista.OrderBy(r => r.ime).FirstOrDefault();
+            return item;
+            
+        }
+        public Table GetUserByName(string name)
+        {
+            return lista.Where(r => r.ime.Contains(name)).FirstOrDefault();
+        }
+        public Table GetUserByAddres(string address)
+        {
+            return lista.Where(r => r.naslov.Contains(address)).FirstOrDefault();
         }
     }
 }

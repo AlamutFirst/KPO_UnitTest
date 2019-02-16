@@ -8,6 +8,10 @@ namespace KPO
 {
     public interface ITable
     {
-         IEnumerable<Table>  GetAll();
+        
+        IEnumerable<Table> GetAll();
+        Table GetFirstItem();
+        Table GetUserByName(string Name);
+        Table GetUserByAddres(string Addres);
     }
 }

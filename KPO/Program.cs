@@ -16,6 +16,10 @@ namespace KPO
             var users = new Users(new TableData());
 
             var result = users.GetAll();
+            var result2 = users.GetFirstItem();
+            var result3= users.GetUserByName("boris");
+            var result4 = users.GetUserByAddres("Doma");
+
 
         }
     }
