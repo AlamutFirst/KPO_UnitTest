@@ -13,5 +13,6 @@ namespace KPO
         Table GetFirstItem();
         Table GetUserByName(string Name);
         Table GetUserByAddres(string Addres);
+        Table GetUserByAddresAndName(string Addres, string name);
     }
 }

@@ -35,7 +35,7 @@ namespace UnitTestKPO
         [TestMethod]
         public void DBGetFirstItem()
         {
-            
+
             var testData = new FakeTablecs();
 
             testData.lista = new List<Table> { new Table { ime = "Bob", priimek = "Smith", naslov="Doma", Id=1 },
@@ -84,6 +84,27 @@ namespace UnitTestKPO
             var reslut = user.GetUserByAddres("Služba");
             var reslut2 = user.GetUserByAddres("rrrrrrr");
             Assert.AreEqual("Služba", reslut.naslov);
+            Assert.IsNull(reslut2);
+
+        }
+
+        [TestMethod]
+        public void DBGetUserByAddressAndName()
+        {
+
+            var testData = new FakeTablecs();
+
+            testData.lista = new List<Table> { new Table { ime = "Bob", priimek = "Smith", naslov="Doma", Id=1 },
+                new Table { ime = "loje", priimek = "Pišuka", naslov="Služba", Id=2 },
+                new Table { ime = "Boris", priimek = "čižman", naslov="Internet", Id=3 },
+                new Table { ime = "Peter", priimek = "Prevc", naslov="LJ", Id=4 } };
+
+            var user = new Users(testData);
+
+            var reslut = user.GetUserByAddresAndName("Služba", "loje");
+            var reslut2 = user.GetUserByAddresAndName("rrrrrrr", "sadasdasd");
+            Assert.AreEqual("Služba", reslut.naslov);
+            Assert.AreEqual("loje", reslut.ime);
             Assert.IsNull(reslut2);
         }
     }

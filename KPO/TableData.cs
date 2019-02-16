@@ -38,7 +38,7 @@ namespace KPO
 
         public Table GetUserByName(string name)
         {
-            string sql = "select * from UsersTable where Ime like ="+name;
+            string sql = "select * from UsersTable where Ime like '%"+name+"%'";
             string pathCurrent = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
 
             using (var connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathCurrent + @"\Database1.mdf;Integrated Security=True"))
@@ -50,7 +50,7 @@ namespace KPO
         }
         public Table GetUserByAddres(string address)
         {
-            string sql = "select * from UsersTable where Naslov like =" + address;
+            string sql = "select * from UsersTable where Naslov like '%" + address+"%'";
             string pathCurrent = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
 
             using (var connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathCurrent + @"\Database1.mdf;Integrated Security=True"))
@@ -60,6 +60,17 @@ namespace KPO
                 return orderDetails.FirstOrDefault();
             }
         }
+        public Table GetUserByAddresAndName(string address, string name)
+        {
+            string sql = "select * from UsersTable where Naslov like '%" + address+"%' AND Ime like '%"+name+"%'";
+            string pathCurrent = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
 
+            using (var connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathCurrent + @"\Database1.mdf;Integrated Security=True"))
+            {
+                connection.Open();
+                var orderDetails = connection.Query<Table>(sql).ToList();
+                return orderDetails.FirstOrDefault();
+            }
+        }
     }
 }

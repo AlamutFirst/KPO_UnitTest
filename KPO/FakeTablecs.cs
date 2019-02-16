@@ -28,5 +28,9 @@ namespace KPO
         {
             return lista.Where(r => r.naslov.Contains(address)).FirstOrDefault();
         }
+        public Table GetUserByAddresAndName(string address, string name)
+        {
+            return lista.Where(r => r.naslov.Contains(address)&&r.ime.Contains(name)).FirstOrDefault();
+        }
     }
 }

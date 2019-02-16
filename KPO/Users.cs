@@ -29,5 +29,9 @@ namespace KPO
         {
             return _userRepository.GetUserByAddres(address);
         }
+        public Table GetUserByAddresAndName(string address, string name)
+        {
+            return _userRepository.GetUserByAddresAndName(address, name);
+        }
     }
 }

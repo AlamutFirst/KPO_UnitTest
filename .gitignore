@@ -26,3 +26,13 @@ UnitTestKPO/obj/Debug/UnitTestKPO.pdb
 UnitTestKPO/obj/Debug/UnitTestKPO.csproj.FileListAbsolute.txt
 UnitTestKPO/obj/Debug/UnitTestKPO.csprojAssemblyReference.cache
 UnitTestKPO/obj/Debug/UnitTestKPO.dll
+GUI/bin/Debug/Database1.mdf
+GUI/bin/Debug/Database1_log.ldf
+GUI/bin/Debug/GUI.exe
+GUI/bin/Debug/GUI.pdb
+GUI/bin/Debug/KPO.exe
+GUI/bin/Debug/KPO.pdb
+GUI/obj/Debug/GUI.csproj.GenerateResource.cache
+GUI/obj/Debug/GUI.csprojAssemblyReference.cache
+GUI/obj/Debug/GUI.exe
+GUI/obj/Debug/GUI.pdb

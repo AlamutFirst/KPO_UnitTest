@@ -56,8 +56,6 @@ namespace KPO
             switch (m)
             {
                 case 1:
-                    Console.WriteLine(@"\n Not a Quadratic equation, 
-                                          Linear equation");
                     lista = null;
                     break;
                 case 2:
@@ -70,7 +68,7 @@ namespace KPO
                     lista.Add((-b - System.Math.Sqrt(d1)) / (2 * a));
                     break;
                 case 4:
-                    Console.WriteLine("\n Roots are Imaginary");
+                    
                     lista.Add((-b) / (2 * a));
                     lista.Add(System.Math.Sqrt(-d1) / (2 * a));
                     break;
